@@ -1,0 +1,10 @@
+{% block content %}
+
+<form method="post" action="">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="file" name="csv_file">
+    <input type ="submit"  name = "send" value = "Send"/>
+</form>
+
+{% endblock content %}
